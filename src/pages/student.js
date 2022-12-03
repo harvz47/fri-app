@@ -16,6 +16,7 @@ function Student() {
     },[]); //this
 
     const submitBtn = function(){
+          e.preventDefault();
         let getData = new FormData(); // get data from
         getData.append('fname', fname); //key value pairs
         getData.append('lname', lname); //key value pairs
