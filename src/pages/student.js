@@ -16,7 +16,7 @@ function Student() {
     },[]); //this
 
     const submitBtn = function(){
-          e.preventDefault();
+         e.preventDefault();
         let getData = new FormData(); // get data from
         getData.append('fname', fname); //key value pairs
         getData.append('lname', lname); //key value pairs
@@ -30,7 +30,7 @@ function Student() {
             config: 'Content-type = "multipart/form-data"' ,
 
         }).then(function(result){
-            alert("succesfully added");
+            
             const url = 'http://localhost/sat-app/db.php'; //link to db
             axios.get(url).then((response)=>{
                 setStudents(response.data);
